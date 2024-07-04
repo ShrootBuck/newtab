@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardBody, Image, Input } from "@nextui-org/react";
+import { Button, Card, CardBody, Image, Input } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
@@ -111,25 +111,50 @@ export default function HomePage() {
 
   const handleSearch = (query: string) => {
     // Ecosia!!!
-    router.push(
-      `https://www.ecosia.org/search?q=${query}&method=tab.zaydkrunz.com`,
-    );
+    if (query.trim() !== "") {
+      router.push(
+        `https://www.ecosia.org/search?q=${query.trim()}&method=tab.zaydkrunz.com`,
+      );
+    }
   };
 
   return (
     <>
       <h1 className="p-5 pt-10 text-center text-5xl">A Brand New Tab</h1>
-      <Input
-        label={randomQuestion}
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            handleSearch(searchQuery);
-          }
-        }}
-        className="m-auto w-1/2 p-5"
-      />
+      <div className="m-auto flex w-1/2 items-center justify-center p-5">
+        <Input
+          label={randomQuestion}
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSearch(searchQuery);
+            }
+          }}
+          className="flex-grow"
+        />
+        <Button
+          isIconOnly
+          aria-label="Search"
+          className="m-2 min-h-14 min-w-14"
+          onClick={() => handleSearch(searchQuery)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </Button>
+      </div>
       <Card className="m-auto size-1/2">
         <CardBody>
           <div className="grid gap-4 sm:grid-cols-4">
