@@ -71,6 +71,26 @@ const shortcuts: Shortcut[] = [
     url: "https://exercism.org",
     iconUrl: "exercism.svg",
   },
+  {
+    name: "Cloudflare",
+    url: "https://cloudflare.com",
+    iconUrl: "cloudflare.svg",
+  },
+  {
+    name: "Vercel",
+    url: "https://vercel.com",
+    iconUrl: "vercel.svg",
+  },
+  {
+    name: "Posthog",
+    url: "https://posthog.zaydkrunz.com",
+    iconUrl: "posthog.svg",
+  },
+  {
+    name: "Gitea",
+    url: "https://gitea.zaydkrunz.com",
+    iconUrl: "gitea.svg",
+  },
 ];
 
 export default function HomePage() {
@@ -98,7 +118,7 @@ export default function HomePage() {
 
   return (
     <>
-      <h1 className="p-5 pt-24 text-center text-5xl">A Brand New Tab</h1>
+      <h1 className="p-5 pt-10 text-center text-5xl">A Brand New Tab</h1>
       <Input
         label={randomQuestion}
         value={searchQuery}
