@@ -136,7 +136,7 @@ export default function HomePage() {
         <Button
           isIconOnly
           aria-label="Search"
-          className="m-2 min-h-14 min-w-14"
+          className="ml-5"
           onClick={() => handleSearch(searchQuery)}
         >
           <svg
