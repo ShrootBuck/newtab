@@ -67,9 +67,9 @@ const shortcuts: Shortcut[] = [
     iconUrl: "protondrive.svg",
   },
   {
-    name: "Exercism",
-    url: "https://exercism.org",
-    iconUrl: "exercism.svg",
+    name: "Hetzner",
+    url: "https://hetzner.com",
+    iconUrl: "hetzner.svg",
   },
   {
     name: "Cloudflare",
