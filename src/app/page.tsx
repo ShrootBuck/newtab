@@ -109,12 +109,20 @@ export default function HomePage() {
     );
   }, []);
 
+  function getRandomInt(min: number, max: number) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
   const handleSearch = (query: string) => {
-    // Ecosia!!!
-    if (query.trim() !== "") {
-      router.push(
-        `https://www.ecosia.org/search?q=${query.trim()}&method=tab.zaydkrunz.com`,
-      );
+    const cleanQuery = query.trim();
+    if (cleanQuery !== "") {
+      if (getRandomInt(1, 3) === 2) {
+        router.push(`https://oceanhero.today/web?q=${cleanQuery}`);
+      } else {
+        router.push(`https://www.ecosia.org/search?q=${cleanQuery}`);
+      }
     }
   };
 
