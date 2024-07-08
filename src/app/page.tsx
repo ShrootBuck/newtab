@@ -118,7 +118,7 @@ export default function HomePage() {
   const handleSearch = (query: string) => {
     const cleanQuery = query.trim();
     if (cleanQuery !== "") {
-      if (getRandomInt(1, 3) === 2) {
+      if (getRandomInt(1, 2) === 2) {
         router.push(`https://oceanhero.today/web?q=${cleanQuery}`);
       } else {
         router.push(`https://www.ecosia.org/search?q=${cleanQuery}`);
