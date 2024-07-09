@@ -3,6 +3,7 @@
 import { Button, Card, CardBody, Image, Input } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 function shuffleArray<T>(array: T[]): T[] {
   return array
@@ -172,7 +173,7 @@ export default function HomePage() {
                 key={`${shortcut.name}-${index}`}
                 isPressable
               >
-                <a href={shortcut.url}>
+                <Link href={shortcut.url}>
                   <CardBody>
                     <Image
                       alt={shortcut.name}
@@ -180,7 +181,7 @@ export default function HomePage() {
                       className="w-full"
                     />
                   </CardBody>
-                </a>
+                </Link>
               </Card>
             ))}
           </div>
