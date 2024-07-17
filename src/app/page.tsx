@@ -89,8 +89,8 @@ const shortcuts: Shortcut[] = [
   },
   {
     name: "Gitea",
-    url: "https://gitea.zaydkrunz.com",
-    iconUrl: "gitea.svg",
+    url: "https://stripe.com",
+    iconUrl: "stripe.svg",
   },
 ];
 
