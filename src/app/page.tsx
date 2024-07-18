@@ -84,7 +84,7 @@ const shortcuts: Shortcut[] = [
   },
   {
     name: "Posthog",
-    url: "https://posthog.zaydkrunz.com",
+    url: "https://posthog.com",
     iconUrl: "posthog.svg",
   },
   {
