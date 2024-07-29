@@ -39,7 +39,7 @@ const shortcuts: Shortcut[] = [
   },
   {
     name: "AWS",
-    url: "https://aws.amazon.com",
+    url: "https://console.aws.amazon.com",
     iconUrl: "aws.svg",
   },
   {
