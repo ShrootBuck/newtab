@@ -43,9 +43,9 @@ const shortcuts: Shortcut[] = [
     iconUrl: "aws.svg",
   },
   {
-    name: "Linear",
-    url: "https://linear.app",
-    iconUrl: "linear.svg",
+    name: "Plane",
+    url: "https://plane.zaydkrunz.com",
+    iconUrl: "plane.svg",
   },
   {
     name: "Lichess",
