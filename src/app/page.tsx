@@ -88,7 +88,7 @@ const shortcuts: Shortcut[] = [
     iconUrl: "posthog.svg",
   },
   {
-    name: "Gitea",
+    name: "Stripe",
     url: "https://stripe.com",
     iconUrl: "stripe.svg",
   },
