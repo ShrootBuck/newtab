@@ -44,7 +44,7 @@ const shortcuts: Shortcut[] = [
   },
   {
     name: "Plane",
-    url: "https://plane.zaydkrunz.com",
+    url: "https://app.plane.so",
     iconUrl: "plane.svg",
   },
   {
