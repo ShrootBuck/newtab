@@ -73,11 +73,6 @@ const shortcuts: Shortcut[] = [
     iconUrl: "khanacademy.svg",
   },
   {
-    name: "Cloudflare",
-    url: "https://cloudflare.com",
-    iconUrl: "cloudflare.svg",
-  },
-  {
     name: "Vercel",
     url: "https://vercel.com",
     iconUrl: "vercel.svg",
