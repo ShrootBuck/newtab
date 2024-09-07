@@ -87,6 +87,11 @@ const shortcuts: Shortcut[] = [
     url: "https://stripe.com",
     iconUrl: "stripe.svg",
   },
+  {
+    name: "TenByte",
+    url: "https://tenbyte.org",
+    iconUrl: "ghost.svg",
+  },
 ];
 
 export default function HomePage() {
