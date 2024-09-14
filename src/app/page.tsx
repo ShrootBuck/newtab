@@ -89,7 +89,7 @@ const shortcuts: Shortcut[] = [
   },
   {
     name: "TenByte",
-    url: "https://tenbyte.org",
+    url: "https://tenbyte.org/ghost",
     iconUrl: "ghost.svg",
   },
 ];
