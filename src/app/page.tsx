@@ -5,13 +5,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-function shuffleArray<T>(array: T[]): T[] {
-  return array
-    .map((value) => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
-}
-
 const sampleSearchQuestions: string[] = [
   "What color is the sky?",
   "What is the capital of France?",
@@ -95,14 +88,16 @@ const shortcuts: Shortcut[] = [
 ];
 
 export default function HomePage() {
-  const [randomShortcuts, setRandomShortcuts] = useState<Shortcut[]>([]);
+  const [sortedShortcuts, setSortedShortcuts] = useState<Shortcut[]>([]);
   const [randomQuestion, setRandomQuestion] = useState<string>("");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const router = useRouter();
 
   useEffect(() => {
-    setRandomShortcuts(shuffleArray(shortcuts));
+    // Sort shortcuts alphabetically by name
+    const sorted = [...shortcuts].sort((a, b) => a.name.localeCompare(b.name));
+    setSortedShortcuts(sorted);
     setRandomQuestion(
       sampleSearchQuestions[
         Math.floor(Math.random() * sampleSearchQuestions.length)
@@ -168,7 +163,7 @@ export default function HomePage() {
       <Card className="m-auto size-1/2">
         <CardBody>
           <div className="grid gap-4 sm:grid-cols-4">
-            {randomShortcuts.map((shortcut, index) => (
+            {sortedShortcuts.map((shortcut, index) => (
               <Card
                 className="size-3/4"
                 key={`${shortcut.name}-${index}`}
