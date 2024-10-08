@@ -51,9 +51,9 @@ const shortcuts: Shortcut[] = [
     iconUrl: "github.svg",
   },
   {
-    name: "Epic Games",
-    url: "https://dev.epicgames.com",
-    iconUrl: "epic.svg",
+    name: "Hetzner",
+    url: "https://console.hetzner.cloud",
+    iconUrl: "hetzner.svg",
   },
   {
     name: "Proton Drive",
