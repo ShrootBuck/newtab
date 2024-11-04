@@ -66,9 +66,9 @@ const shortcuts: Shortcut[] = [
     iconUrl: "khanacademy.svg",
   },
   {
-    name: "Clerk",
-    url: "https://clerk.com",
-    iconUrl: "clerk.svg",
+    name: "Hacker News",
+    url: "https://news.ycombinator.com",
+    iconUrl: "ycombinator.svg",
   },
   {
     name: "Posthog",
