@@ -137,6 +137,7 @@ export default function HomePage() {
             }
           }}
           className="flex-grow"
+          autoComplete="false"
         />
         <Button
           isIconOnly
