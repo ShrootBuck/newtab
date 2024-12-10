@@ -51,9 +51,9 @@ const shortcuts: Shortcut[] = [
     iconUrl: "github.svg",
   },
   {
-    name: "Hetzner",
-    url: "https://console.hetzner.cloud",
-    iconUrl: "hetzner.svg",
+    name: "ChatGPT",
+    url: "https://chatgpt.com",
+    iconUrl: "openai.svg",
   },
   {
     name: "Proton Drive",
