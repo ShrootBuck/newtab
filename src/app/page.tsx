@@ -71,9 +71,9 @@ const shortcuts: Shortcut[] = [
     iconUrl: "ycombinator.svg",
   },
   {
-    name: "Posthog",
-    url: "https://posthog.com",
-    iconUrl: "posthog.svg",
+    name: "Exercism",
+    url: "https://exercism.org",
+    iconUrl: "exercism.svg",
   },
   {
     name: "Stripe",
