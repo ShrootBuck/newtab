@@ -5,10 +5,19 @@ import { useState, useEffect } from "react";
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { useRouter } from "next/navigation";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "~/components/ui/tooltip";
+import Image from "next/image";
+import { Shortcut, shortcuts } from "./shortcuts";
 
 export default function HomePage() {
   const router = useRouter();
 
+  const [sortedShortcuts, setSortedShortcuts] = useState<Shortcut[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [canSearch, setCanSearch] = useState(true);
   const [time, setTime] = useState(() => {
@@ -22,9 +31,15 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(`https://ecosia.org/search?q=${cleanQuery}`);
+      router.push(`https://www.ecosia.org/search?q=${cleanQuery}`);
     }
   };
+
+  useEffect(() => {
+    // Sort shortcuts alphabetically by name
+    const sorted = [...shortcuts].sort((a, b) => a.name.localeCompare(b.name));
+    setSortedShortcuts(sorted);
+  }, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -41,7 +56,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <h1 className="p-24 text-center text-4xl md:text-6xl lg:text-8xl">
+      <h1 className="p-12 text-center text-4xl md:text-6xl lg:text-8xl">
         {time}
       </h1>
       <div className="m-auto flex w-full max-w-screen-sm px-4">
@@ -68,6 +83,37 @@ export default function HomePage() {
         >
           <SearchIcon />
         </Button>
+      </div>
+
+      <div className="m-auto flex w-full max-w-screen-sm px-4">
+        <div className="my-8 grid w-full grid-cols-3 gap-4 sm:grid-cols-6">
+          <TooltipProvider>
+            {sortedShortcuts.map((shortcut, index) => (
+              <Tooltip key={index}>
+                <TooltipTrigger asChild>
+                  <Button
+                    variant="outline"
+                    className="h-24 w-24"
+                    onClick={() => {
+                      setCanSearch(false);
+                      router.push(shortcut.url);
+                    }}
+                    disabled={!canSearch}
+                  >
+                    <Image
+                      src={shortcut.iconUrl}
+                      width={48}
+                      height={48}
+                      alt={shortcut.name}
+                      draggable={false}
+                    />
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>{shortcut.name}</TooltipContent>
+              </Tooltip>
+            ))}
+          </TooltipProvider>
+        </div>
       </div>
     </div>
   );
