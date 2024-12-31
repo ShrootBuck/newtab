@@ -21,9 +21,9 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "plane.svg",
   },
   {
-    name: "Lichess",
-    url: "https://lichess.org",
-    iconUrl: "lichess.svg",
+    name: "Vercel",
+    url: "https://vercel.com",
+    iconUrl: "vercel.svg",
   },
   {
     name: "GitHub",

@@ -12,7 +12,7 @@ import {
   TooltipTrigger,
 } from "~/components/ui/tooltip";
 import Image from "next/image";
-import { Shortcut, shortcuts } from "./shortcuts";
+import { type Shortcut, shortcuts } from "./shortcuts";
 
 export default function HomePage() {
   const router = useRouter();
