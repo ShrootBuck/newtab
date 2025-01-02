@@ -65,4 +65,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://tenbyte.org/ghost",
     iconUrl: "ghost.svg",
   },
+  {
+    name: "Interactive Brokers",
+    url: "https://www.interactivebrokers.com",
+    iconUrl: "ibkr.svg",
+  },
 ];
