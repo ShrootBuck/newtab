@@ -70,4 +70,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://shopify.com",
     iconUrl: "shopify.svg",
   },
+  {
+    name: "Supabase",
+    url: "https://supabase.com",
+    iconUrl: "supabase.svg",
+  },
 ];
