@@ -75,4 +75,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://supabase.com",
     iconUrl: "supabase.svg",
   },
+  {
+    name: "Cal",
+    url: "https://cal.com",
+    iconUrl: "caldotcom.svg",
+  },
 ];
