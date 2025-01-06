@@ -80,4 +80,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://cal.com",
     iconUrl: "caldotcom.svg",
   },
+  {
+    name: "Penpot",
+    url: "https://penpot.app",
+    iconUrl: "penpot.svg",
+  },
 ];
