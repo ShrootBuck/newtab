@@ -65,4 +65,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://tenbyte.org/ghost",
     iconUrl: "ghost.svg",
   },
+  {
+    name: "Shopify",
+    url: "https://shopify.com",
+    iconUrl: "shopify.svg",
+  },
 ];
