@@ -21,11 +21,6 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "plane.svg",
   },
   {
-    name: "HelloFresh",
-    url: "https://www.hellofresh.com",
-    iconUrl: "vercel.svg",
-  },
-  {
     name: "Vercel",
     url: "https://vercel.com",
     iconUrl: "vercel.svg",
