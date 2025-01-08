@@ -7,7 +7,7 @@ export type Shortcut = {
 export const shortcuts: Shortcut[] = [
   {
     name: "YouTube",
-    url: "https://youtu.be",
+    url: "https://www.youtube.com",
     iconUrl: "youtube.svg",
   },
   {
@@ -42,7 +42,7 @@ export const shortcuts: Shortcut[] = [
   },
   {
     name: "Khan Academy",
-    url: "https://khanacademy.org",
+    url: "https://www.khanacademy.org",
     iconUrl: "khanacademy.svg",
   },
   {
@@ -87,7 +87,7 @@ export const shortcuts: Shortcut[] = [
   },
   {
     name: "Amazon",
-    url: "https://amazon.com",
+    url: "https://www.amazon.com",
     iconUrl: "amazon.svg",
   },
 ];
