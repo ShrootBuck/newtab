@@ -85,4 +85,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://penpot.app",
     iconUrl: "penpot.svg",
   },
+  {
+    name: "Amazon",
+    url: "https://amazon.com",
+    iconUrl: "amazon.svg",
+  },
 ];
