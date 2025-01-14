@@ -85,4 +85,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://www.amazon.com",
     iconUrl: "amazon.svg",
   },
+  {
+    name: "AP Students",
+    url: "https://apstudents.collegeboard.org",
+    iconUrl: "collegeboard.svg",
+  },
 ];
