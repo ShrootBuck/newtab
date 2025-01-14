@@ -87,7 +87,7 @@ export const shortcuts: Shortcut[] = [
   },
   {
     name: "AP Classroom",
-    url: "https://apstudents.collegeboard.org",
+    url: "https://apclassroom.collegeboard.org",
     iconUrl: "collegeboard.svg",
   },
 ];
