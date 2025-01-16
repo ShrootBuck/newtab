@@ -90,4 +90,9 @@ export const shortcuts: Shortcut[] = [
     url: "https://apclassroom.collegeboard.org",
     iconUrl: "collegeboard.svg",
   },
+  {
+    name: "Open WebUI",
+    url: "https://ai.zaydkrunz.com",
+    iconUrl: "openwebui.svg",
+  },
 ];
