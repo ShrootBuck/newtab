@@ -70,11 +70,11 @@ export const shortcuts: Shortcut[] = [
     url: "https://supabase.com",
     iconUrl: "supabase.svg",
   },
-  {
-    name: "Cal",
-    url: "https://cal.com",
-    iconUrl: "caldotcom.svg",
-  },
+  // {
+  //   name: "Cal",
+  //   url: "https://cal.com",
+  //   iconUrl: "caldotcom.svg",
+  // },
   {
     name: "Penpot",
     url: "https://penpot.app",
@@ -90,9 +90,14 @@ export const shortcuts: Shortcut[] = [
     url: "https://apclassroom.collegeboard.org",
     iconUrl: "collegeboard.svg",
   },
+  // {
+  //   name: "Open WebUI",
+  //   url: "https://ai.zaydkrunz.com",
+  //   iconUrl: "openwebui.svg",
+  // },
   {
-    name: "Open WebUI",
-    url: "https://ai.zaydkrunz.com",
-    iconUrl: "openwebui.svg",
+    name: "Cloudflare",
+    url: "https://dash.cloudflare.com",
+    iconUrl: "cloudflare.svg",
   },
 ];
