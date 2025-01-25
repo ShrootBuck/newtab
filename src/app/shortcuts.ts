@@ -90,14 +90,19 @@ export const shortcuts: Shortcut[] = [
     url: "https://apclassroom.collegeboard.org",
     iconUrl: "collegeboard.svg",
   },
-  // {
-  //   name: "Open WebUI",
-  //   url: "https://ai.zaydkrunz.com",
-  //   iconUrl: "openwebui.svg",
-  // },
+  {
+    name: "Open WebUI",
+    url: "http://localhost:3000",
+    iconUrl: "openwebui.svg",
+  },
   {
     name: "Cloudflare",
     url: "https://dash.cloudflare.com",
     iconUrl: "cloudflare.svg",
+  },
+  {
+    name: "DeepSeek",
+    url: "https://chat.deepseek.com",
+    iconUrl: "deepseek.svg",
   },
 ];
