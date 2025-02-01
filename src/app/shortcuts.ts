@@ -100,9 +100,4 @@ export const shortcuts: Shortcut[] = [
     url: "https://dash.cloudflare.com",
     iconUrl: "cloudflare.svg",
   },
-  {
-    name: "DeepSeek",
-    url: "https://chat.deepseek.com",
-    iconUrl: "deepseek.svg",
-  },
 ];
