@@ -75,11 +75,11 @@ export const shortcuts: Shortcut[] = [
   //   url: "https://cal.com",
   //   iconUrl: "caldotcom.svg",
   // },
-  {
-    name: "Penpot",
-    url: "https://penpot.app",
-    iconUrl: "penpot.svg",
-  },
+  // {
+  //   name: "Penpot",
+  //   url: "https://penpot.app",
+  //   iconUrl: "penpot.svg",
+  // },
   {
     name: "Amazon",
     url: "https://www.amazon.com",
@@ -99,5 +99,10 @@ export const shortcuts: Shortcut[] = [
     name: "Cloudflare",
     url: "https://dash.cloudflare.com",
     iconUrl: "cloudflare.svg",
+  },
+  {
+    name: "Perplexity",
+    url: "https://www.perplexity.ai",
+    iconUrl: "perplexity.svg",
   },
 ];
