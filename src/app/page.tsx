@@ -31,7 +31,9 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(`https://www.perplexity.ai/?q=${cleanQuery}`);
+      router.push(
+        `https://www.perplexity.ai/?q=${encodeURIComponent(cleanQuery)}`,
+      );
     }
   };
 
