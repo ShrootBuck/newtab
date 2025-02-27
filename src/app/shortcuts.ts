@@ -92,7 +92,7 @@ export const shortcuts: Shortcut[] = [
   },
   {
     name: "Open WebUI",
-    url: "http://localhost:3000",
+    url: "http://ai.zaydkrunz.com",
     iconUrl: "openwebui.svg",
   },
   {
