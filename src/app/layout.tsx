@@ -1,6 +1,6 @@
 import "~/styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
+import { Inter } from "next/font/google";
 import { type Metadata } from "next";
 import { ThemeProvider } from "~/components/theme-provider";
 
@@ -10,13 +10,20 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={`${inter.variable}`}>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>
