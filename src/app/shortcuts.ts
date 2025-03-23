@@ -51,11 +51,6 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "ycombinator.svg",
   },
   {
-    name: "Exercism",
-    url: "https://exercism.org",
-    iconUrl: "exercism.svg",
-  },
-  {
     name: "Stripe",
     url: "https://stripe.com",
     iconUrl: "stripe.svg",
@@ -70,20 +65,15 @@ export const shortcuts: Shortcut[] = [
     url: "https://supabase.com",
     iconUrl: "supabase.svg",
   },
-  // {
-  //   name: "Cal",
-  //   url: "https://cal.com",
-  //   iconUrl: "caldotcom.svg",
-  // },
-  // {
-  //   name: "Penpot",
-  //   url: "https://penpot.app",
-  //   iconUrl: "penpot.svg",
-  // },
   {
-    name: "Amazon",
-    url: "https://www.amazon.com",
-    iconUrl: "amazon.svg",
+    name: "Cal",
+    url: "https://cal.com",
+    iconUrl: "caldotcom.svg",
+  },
+  {
+    name: "Walmart",
+    url: "https://www.walmart.com",
+    iconUrl: "walmart.svg",
   },
   {
     name: "AP Classroom",
@@ -92,7 +82,7 @@ export const shortcuts: Shortcut[] = [
   },
   {
     name: "Open WebUI",
-    url: "http://ai.zaydkrunz.com",
+    url: "http://localhost:3000",
     iconUrl: "openwebui.svg",
   },
   {
