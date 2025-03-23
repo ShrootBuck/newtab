@@ -76,8 +76,8 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "walmart.svg",
   },
   {
-    name: "AP Classroom",
-    url: "https://apclassroom.collegeboard.org",
+    name: "College Board",
+    url: "https://collegeboard.org",
     iconUrl: "collegeboard.svg",
   },
   {
