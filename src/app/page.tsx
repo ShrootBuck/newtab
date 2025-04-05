@@ -20,12 +20,7 @@ export default function HomePage() {
   const [sortedShortcuts, setSortedShortcuts] = useState<Shortcut[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [canSearch, setCanSearch] = useState(true);
-  const [time, setTime] = useState(() => {
-    return new Date().toLocaleTimeString([], {
-      minute: "2-digit",
-      hour: "2-digit",
-    });
-  });
+  const [time, setTime] = useState("--:-- AM");
 
   const handleSearch = () => {
     const cleanQuery = searchQuery.trim();
