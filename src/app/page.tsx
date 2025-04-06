@@ -46,7 +46,7 @@ export default function HomePage() {
           hour: "2-digit",
         }),
       );
-    }, 1000); // Close enough
+    }, 250); // Close enough
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount (although this is kinda unnecessary)
   }, []);
