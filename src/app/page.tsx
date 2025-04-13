@@ -39,16 +39,23 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    // Function to update the time
+    const updateTime = () => {
       setTime(
         new Date().toLocaleTimeString([], {
           minute: "2-digit",
           hour: "2-digit",
         }),
       );
-    }, 250); // Close enough
+    };
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount (although this is kinda unnecessary)
+    // Update time immediately when component mounts
+    updateTime();
+
+    // Then set up interval for subsequent updates
+    const intervalId = setInterval(updateTime, 1000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
