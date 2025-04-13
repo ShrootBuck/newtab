@@ -58,6 +58,30 @@ export default function HomePage() {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    // Function to reset interactive elements when returning to the page
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        setCanSearch(true);
+      }
+    };
+
+    // Function to handle page show events (specifically for back/forward navigation)
+    const handlePageShow = () => {
+      setCanSearch(true);
+    };
+
+    // Add event listeners
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    window.addEventListener("pageshow", handlePageShow);
+
+    // Clean up listeners on unmount
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("pageshow", handlePageShow);
+    };
+  }, []);
+
   return (
     <div>
       <h1 className="p-12 text-center text-4xl md:text-6xl lg:text-8xl">
