@@ -66,9 +66,9 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "supabase.svg",
   },
   {
-    name: "Cal",
-    url: "https://cal.com",
-    iconUrl: "caldotcom.svg",
+    name: "T3 Chat",
+    url: "https://t3.chat",
+    iconUrl: "t3.svg",
   },
   {
     name: "Walmart",
