@@ -81,9 +81,9 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "collegeboard.svg",
   },
   {
-    name: "Open WebUI",
-    url: "http://localhost:3000",
-    iconUrl: "openwebui.svg",
+    name: "Hetzner",
+    url: "https://console.hetzner.cloud",
+    iconUrl: "hetzner.svg",
   },
   {
     name: "Cloudflare",
