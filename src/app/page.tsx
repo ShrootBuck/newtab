@@ -27,7 +27,7 @@ export default function HomePage() {
     if (cleanQuery !== "") {
       setCanSearch(false);
       router.push(
-        `https://www.perplexity.ai/?q=${encodeURIComponent(cleanQuery)}`,
+        `https://t3.chat/new?model=gemini-2.5-pro&q=${encodeURIComponent(cleanQuery)}&search=true`,
       );
     }
   };
