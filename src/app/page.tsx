@@ -41,12 +41,13 @@ export default function HomePage() {
   useEffect(() => {
     // Function to update the time
     const updateTime = () => {
-      setTime(
-        new Date().toLocaleTimeString([], {
-          minute: "2-digit",
-          hour: "2-digit",
-        }),
-      );
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes().toString().padStart(2, "0");
+      const ampm = hours >= 12 ? "PM" : "AM";
+      const displayHours = hours % 12 || 12; // Convert to 12-hour format without leading zeros
+
+      setTime(`${displayHours}:${minutes} ${ampm}`);
     };
 
     // Update time immediately when component mounts
