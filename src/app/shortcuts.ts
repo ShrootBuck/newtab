@@ -91,8 +91,8 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "cloudflare.svg",
   },
   {
-    name: "Perplexity",
-    url: "https://www.perplexity.ai",
-    iconUrl: "perplexity.svg",
+    name: "Grok",
+    url: "https://grok.com",
+    iconUrl: "grok.svg",
   },
 ];
