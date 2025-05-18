@@ -26,9 +26,7 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(
-        `https://t3.chat/new?model=gemini-2.5-pro&search=true&q=${encodeURIComponent(cleanQuery)}`,
-      );
+      router.push(`https://grok.com/?q=${encodeURIComponent(cleanQuery)}`);
     }
   };
 
