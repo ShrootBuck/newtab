@@ -11,9 +11,9 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "youtube.svg",
   },
   {
-    name: "AWS",
-    url: "https://console.aws.amazon.com",
-    iconUrl: "aws.svg",
+    name: "TradingView",
+    url: "https://www.tradingview.com",
+    iconUrl: "tradingview.svg",
   },
   {
     name: "Plane",
