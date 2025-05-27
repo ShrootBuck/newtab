@@ -26,7 +26,7 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(`https://grok.com/?q=${encodeURIComponent(cleanQuery)}`);
+      router.push(`https://unduck.link?q=${encodeURIComponent(cleanQuery)}`);
     }
   };
 
