@@ -12,7 +12,7 @@ export const shortcuts: Shortcut[] = [
   },
   {
     name: "TradingView",
-    url: "https://www.tradingview.com",
+    url: "https://www.tradingview.com/chart",
     iconUrl: "tradingview.svg",
   },
   {
