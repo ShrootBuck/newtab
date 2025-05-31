@@ -36,9 +36,9 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "openai.svg",
   },
   {
-    name: "Proton Drive",
-    url: "https://drive.proton.me",
-    iconUrl: "protondrive.svg",
+    name: "Claude",
+    url: "https://claude.ai",
+    iconUrl: "claude.svg",
   },
   {
     name: "Khan Academy",
