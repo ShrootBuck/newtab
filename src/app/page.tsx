@@ -90,7 +90,7 @@ export default function HomePage() {
         <Input
           type="text"
           disabled={!canSearch}
-          placeholder="What time is it in Cupertino, CA?"
+          placeholder="What time is it in Chicago, IL?"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           onKeyDown={(e) => {
