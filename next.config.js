@@ -9,7 +9,7 @@ const config = {
   async headers() {
     return [
       {
-        source: "/(.*\\.(svg|ico))$", // Apply to .svg and .ico files
+        source: "/(.*)\\.(svg|ico)$", // Apply to .svg and .ico files
         headers: [
           {
             key: "Cache-Control",
