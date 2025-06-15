@@ -26,7 +26,9 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(`https://unduck.link?q=${encodeURIComponent(cleanQuery)}`);
+      router.push(
+        `https://t3.chat/new?model=gemini-2.5-pro&q=${encodeURIComponent(cleanQuery)}&search=true`,
+      );
     }
   };
 
