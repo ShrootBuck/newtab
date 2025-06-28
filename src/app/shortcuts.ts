@@ -36,9 +36,9 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "openai.svg",
   },
   {
-    name: "Claude",
-    url: "https://claude.ai",
-    iconUrl: "claude.svg",
+    name: "Together AI",
+    url: "https://api.together.ai",
+    iconUrl: "together.svg",
   },
   {
     name: "Khan Academy",
