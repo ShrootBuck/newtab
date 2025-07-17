@@ -31,9 +31,9 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "github.svg",
   },
   {
-    name: "ChatGPT",
-    url: "https://chatgpt.com",
-    iconUrl: "openai.svg",
+    name: "Excalidraw",
+    url: "https://excalidraw.com",
+    iconUrl: "excalidraw.svg",
   },
   {
     name: "OpenRouter",
