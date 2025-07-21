@@ -26,9 +26,10 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(
-        `https://t3.chat/new?model=gpt-4.1&q=${encodeURIComponent(cleanQuery)}&search=true`,
-      );
+      // router.push(
+      //   `https://t3.chat/new?model=gpt-4.1&q=${encodeURIComponent(cleanQuery)}&search=true`,
+      // );
+      router.push(`https://grok.com/?q=${encodeURIComponent(cleanQuery)}`);
     }
   };
 
