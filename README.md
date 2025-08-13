@@ -1,4 +1,4 @@
-# New Tab
+# New Tab Page
 
 This is a simple new tab page that I use in my browser, [Brave](https://brave.com).
 
