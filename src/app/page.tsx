@@ -26,10 +26,7 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      // router.push(
-      //   `https://www.useinvent.com?q=${encodeURIComponent(cleanQuery)}`,
-      // );
-      router.push(`https://grok.com/?q=${encodeURIComponent(cleanQuery)}`);
+      router.push(`https://scira.ai/?q=${encodeURIComponent(cleanQuery)}`);
     }
   };
 
