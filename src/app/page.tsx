@@ -13,7 +13,6 @@ import {
 } from "~/components/ui/tooltip";
 import Image from "next/image";
 import { type Shortcut, shortcuts } from "./shortcuts";
-
 export default function HomePage() {
   const router = useRouter();
 
@@ -26,7 +25,9 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(`https://www.perplexity.ai/?q=${encodeURIComponent(cleanQuery)}`);
+      router.push(
+        `https://www.perplexity.ai/?q=${encodeURIComponent(cleanQuery)}`,
+      );
     }
   };
 
@@ -82,7 +83,12 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div>
+    <div className="relative min-h-dvh overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div className="h-full w-full bg-gradient-to-b from-background via-background to-background" />
+        <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_50%_0%,hsl(270_70%_50%/0.15),transparent_60%)] dark:bg-[radial-gradient(70%_70%_at_50%_0%,hsl(270_70%_50%/0.10),transparent_60%)]" />
+      </div>
+
       <h1 className="p-12 text-center text-4xl md:text-6xl lg:text-8xl">
         {time}
       </h1>

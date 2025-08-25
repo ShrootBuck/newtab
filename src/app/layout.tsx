@@ -3,7 +3,6 @@ import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 import { type Metadata } from "next";
 import { ThemeProvider } from "~/components/theme-provider";
-
 export const metadata: Metadata = {
   title: "New Tab",
   description: "A brand new tab",
@@ -18,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable}`} suppressHydrationWarning>
       <body>
-        <ThemeProvider 
-          attribute="class" 
+        <ThemeProvider
+          attribute="class"
           defaultTheme="dark"
           enableSystem={false}
           disableTransitionOnChange
