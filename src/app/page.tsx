@@ -26,7 +26,7 @@ export default function HomePage() {
     if (cleanQuery !== "") {
       setCanSearch(false);
       router.push(
-        `https://www.perplexity.ai/?q=${encodeURIComponent(cleanQuery)}`,
+        `https://t3.chat/new?model=gpt-5-chat&q=${encodeURIComponent(cleanQuery)}&search=true`,
       );
     }
   };
