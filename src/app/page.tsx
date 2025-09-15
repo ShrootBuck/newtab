@@ -26,7 +26,7 @@ export default function HomePage() {
     if (cleanQuery !== "") {
       setCanSearch(false);
       router.push(
-        `https://t3.chat/new?model=gpt-5-chat&q=${encodeURIComponent(cleanQuery)}&search=true`,
+        `https://t3.chat/new?model=gemini-2.5-flash-thinking&q=${encodeURIComponent(cleanQuery)}&search=true`,
       );
     }
   };
