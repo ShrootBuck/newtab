@@ -25,9 +25,7 @@ export default function HomePage() {
     const cleanQuery = searchQuery.trim();
     if (cleanQuery !== "") {
       setCanSearch(false);
-      router.push(
-        `https://t3.chat/new?model=gemini-2.5-flash-thinking&q=${encodeURIComponent(cleanQuery)}&search=true`,
-      );
+      router.push(`https://grok.com/?q=${encodeURIComponent(cleanQuery)}`);
     }
   };
 
