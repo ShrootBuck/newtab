@@ -3,6 +3,8 @@ import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 import { type Metadata } from "next";
 import { ThemeProvider } from "~/components/theme-provider";
+import { CursorAura } from "~/components/cursor-aura";
+
 export const metadata: Metadata = {
   title: "New Tab",
   description: "A brand new tab",
@@ -23,6 +25,7 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
+          <CursorAura />
           {children}
         </ThemeProvider>
       </body>
