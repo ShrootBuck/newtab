@@ -8,7 +8,6 @@ import { CursorAura } from "~/components/cursor-aura";
 export const metadata: Metadata = {
   title: "New Tab",
   description: "A brand new tab",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
