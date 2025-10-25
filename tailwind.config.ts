@@ -14,6 +14,49 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        aurora: {
+          "0%": {
+            transform: "translate3d(-10%, -10%, 0) scale(1)",
+          },
+          "50%": {
+            transform: "translate3d(12%, 8%, 0) scale(1.05)",
+          },
+          "100%": {
+            transform: "translate3d(-10%, -10%, 0) scale(1)",
+          },
+        },
+        float: {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-14px)",
+          },
+        },
+        grid: {
+          "0%": {
+            backgroundPosition: "0px 0px",
+          },
+          "100%": {
+            backgroundPosition: "120px 120px",
+          },
+        },
+        shine: {
+          "0%": {
+            transform: "translateX(-120%) skewX(-18deg)",
+          },
+          "100%": {
+            transform: "translateX(220%) skewX(-18deg)",
+          },
+        },
+      },
+      animation: {
+        aurora: "aurora 22s ease-in-out infinite",
+        float: "float 12s ease-in-out infinite",
+        grid: "grid 60s linear infinite",
+        shine: "shine 8s ease-in-out infinite",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
