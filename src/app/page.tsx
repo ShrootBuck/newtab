@@ -1,7 +1,7 @@
 "use client";
 
 import { SearchIcon } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { useRouter } from "next/navigation";
@@ -12,14 +12,26 @@ import {
   TooltipTrigger,
 } from "~/components/ui/tooltip";
 import Image from "next/image";
-import { type Shortcut, shortcuts } from "./shortcuts";
+import { shortcuts } from "./shortcuts";
 export default function HomePage() {
   const router = useRouter();
 
-  const [sortedShortcuts, setSortedShortcuts] = useState<Shortcut[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [canSearch, setCanSearch] = useState(true);
-  const [time, setTime] = useState("--:-- AM");
+  const timeFormatter = useMemo(
+    () =>
+      new Intl.DateTimeFormat("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+      }),
+    [],
+  );
+  const [time, setTime] = useState(() => timeFormatter.format(new Date()));
+
+  const sortedShortcuts = useMemo(
+    () => [...shortcuts].sort((a, b) => a.name.localeCompare(b.name)),
+    [],
+  );
 
   const handleSearch = () => {
     const cleanQuery = searchQuery.trim();
@@ -30,31 +42,26 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    // Sort shortcuts alphabetically by name
-    const sorted = [...shortcuts].sort((a, b) => a.name.localeCompare(b.name));
-    setSortedShortcuts(sorted);
-  }, []);
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
 
-  useEffect(() => {
-    // Function to update the time
-    const updateTime = () => {
+    const tick = () => {
       const now = new Date();
-      const hours = now.getHours();
-      const minutes = now.getMinutes().toString().padStart(2, "0");
-      const ampm = hours >= 12 ? "PM" : "AM";
-      const displayHours = hours % 12 || 12; // Convert to 12-hour format without leading zeros
+      setTime(timeFormatter.format(now));
 
-      setTime(`${displayHours}:${minutes} ${ampm}`);
+      const millisecondsUntilNextMinute =
+        60000 - (now.getSeconds() * 1000 + now.getMilliseconds());
+
+      timeoutId = window.setTimeout(tick, millisecondsUntilNextMinute);
     };
 
-    // Update time immediately when component mounts
-    updateTime();
+    tick();
 
-    // Then set up interval for subsequent updates
-    const intervalId = setInterval(updateTime, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
+    return () => {
+      if (timeoutId !== undefined) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [timeFormatter]);
 
   useEffect(() => {
     // Function to reset interactive elements when returning to the page
