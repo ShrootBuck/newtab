@@ -42,7 +42,7 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    let timeoutId: ReturnType<typeof window.setTimeout> | undefined;
 
     const tick = () => {
       const now = new Date();
@@ -58,7 +58,7 @@ export default function HomePage() {
 
     return () => {
       if (timeoutId !== undefined) {
-        clearTimeout(timeoutId);
+        window.clearTimeout(timeoutId);
       }
     };
   }, [timeFormatter]);
