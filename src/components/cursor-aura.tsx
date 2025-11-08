@@ -7,15 +7,8 @@ export function CursorAura() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    let animationFrameId: number;
-    let currentX = -100;
-    let currentY = -100;
-    let targetX = -100;
-    let targetY = -100;
-
     const handleMouseMove = (e: MouseEvent) => {
-      targetX = e.clientX;
-      targetY = e.clientY;
+      setPosition({ x: e.clientX, y: e.clientY });
       if (!isVisible) setIsVisible(true);
     };
 
@@ -23,29 +16,12 @@ export function CursorAura() {
       setIsVisible(false);
     };
 
-    const animate = () => {
-      const dx = targetX - currentX;
-      const dy = targetY - currentY;
-      
-      currentX += dx * 0.15;
-      currentY += dy * 0.15;
-
-      setPosition({
-        x: currentX,
-        y: currentY,
-      });
-
-      animationFrameId = requestAnimationFrame(animate);
-    };
-
     window.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseleave", handleMouseLeave);
-    animationFrameId = requestAnimationFrame(animate);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseleave", handleMouseLeave);
-      cancelAnimationFrame(animationFrameId);
     };
   }, [isVisible]);
 
