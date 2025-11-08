@@ -23,8 +23,8 @@ const config = {
         headers: [
           {
             key: "Cache-Control",
-            // 1 hour in seconds = 60 * 60 = 3600
-            value: "public, max-age=3600, stale-while-revalidate=3600",
+            // 24 hours in seconds = 24 * 60 * 60 = 86400
+            value: "public, max-age=86400, stale-while-revalidate=86400",
           },
         ],
       },

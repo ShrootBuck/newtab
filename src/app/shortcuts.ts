@@ -4,7 +4,7 @@ export type Shortcut = {
   iconUrl: string;
 };
 
-export const shortcuts: Shortcut[] = [
+const shortcutDefinitions: Shortcut[] = [
   {
     name: "YouTube",
     url: "https://www.youtube.com",
@@ -96,3 +96,11 @@ export const shortcuts: Shortcut[] = [
     iconUrl: "grok.svg",
   },
 ];
+
+export const shortcuts: Shortcut[] = [...shortcutDefinitions].sort((a, b) =>
+  a.name.localeCompare(b.name),
+);
+
+export const shortcutIconUrls: string[] = Array.from(
+  new Set(shortcuts.map((shortcut) => shortcut.iconUrl)),
+);
