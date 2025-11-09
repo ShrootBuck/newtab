@@ -12,7 +12,6 @@ export const SEARCH_PROMPTS: readonly string[] = [
   "What are monads in functional programming?",
   "Why do people love Neovim so much?",
   "What were Maxwell's contributions to electromagnetism?",
-  "How do I solve USACO Bronze problems faster?",
   "What's the acceptance rate at Stanford for CS majors?",
   "Should I learn Kotlin or stick with Java?",
   "What's the difference between Dijkstra's and Bellman-Ford?",
