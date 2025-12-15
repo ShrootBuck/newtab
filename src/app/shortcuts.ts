@@ -71,9 +71,9 @@ const shortcutDefinitions: Shortcut[] = [
     iconUrl: "t3.svg",
   },
   {
-    name: "Walmart",
-    url: "https://www.walmart.com",
-    iconUrl: "walmart.svg",
+    name: "Amazon",
+    url: "https://www.amazon.com",
+    iconUrl: "amazon.svg",
   },
   {
     name: "College Board",
