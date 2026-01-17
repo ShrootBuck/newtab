@@ -41,9 +41,9 @@ const shortcutDefinitions: Shortcut[] = [
     iconUrl: "openrouter.svg",
   },
   {
-    name: "Khan Academy",
-    url: "https://www.khanacademy.org",
-    iconUrl: "khanacademy.svg",
+    name: "PostHog",
+    url: "https://posthog.com",
+    iconUrl: "posthog.svg",
   },
   {
     name: "Hacker News",
