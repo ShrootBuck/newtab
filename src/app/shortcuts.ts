@@ -91,9 +91,9 @@ const shortcutDefinitions: Shortcut[] = [
     iconUrl: "cloudflare.svg",
   },
   {
-    name: "Grok",
-    url: "https://grok.com",
-    iconUrl: "grok.svg",
+    name: "Artificial Analysis",
+    url: "https://artificialanalysis.ai",
+    iconUrl: "artificialanalysis.svg",
   },
 ];
 
