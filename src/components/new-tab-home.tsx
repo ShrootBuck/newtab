@@ -17,7 +17,7 @@ import { shortcuts } from "~/app/shortcuts";
 import { getRandomSearchPrompt, SEARCH_PROMPTS } from "~/lib/search-prompts";
 
 const SEARCH_ENDPOINT =
-  "https://t3.chat/new?model=glm-5-thinking&search=true&q=";
+  "https://t3.chat/new?model=gemini-3-flash&search=true&q=";
 
 export function NewTabHome() {
   const router = useRouter();
