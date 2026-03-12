@@ -66,9 +66,9 @@ const shortcutDefinitions: Shortcut[] = [
     iconUrl: "supabase.svg",
   },
   {
-    name: "T3 Chat",
-    url: "https://t3.chat",
-    iconUrl: "t3.svg",
+    name: "Claude",
+    url: "https://claude.ai",
+    iconUrl: "claude.svg",
   },
   {
     name: "Amazon",
