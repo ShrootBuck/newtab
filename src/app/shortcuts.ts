@@ -67,7 +67,7 @@ const shortcutDefinitions: Shortcut[] = [
   },
   {
     name: "Trigger",
-    url: "https://trigger.dev",
+    url: "https://cloud.trigger.dev",
     iconUrl: "trigger.svg",
   },
   {
