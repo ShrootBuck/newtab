@@ -66,9 +66,9 @@ const shortcutDefinitions: Shortcut[] = [
     iconUrl: "supabase.svg",
   },
   {
-    name: "Claude",
-    url: "https://claude.ai",
-    iconUrl: "claude.svg",
+    name: "Trigger",
+    url: "https://trigger.dev",
+    iconUrl: "trigger.svg",
   },
   {
     name: "Amazon",
