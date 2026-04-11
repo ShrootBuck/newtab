@@ -1,21 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
-  <defs>
-    <style>
-      .cls-1, .cls-2, .cls-3 {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-
-      .cls-1, .cls-2 {
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <g id="_Group_favicon" data-name="&amp;lt;Group&amp;gt; favicon">
-    <path class="cls-2" d="M192.75,210.02h42.32l-55.89-97.25-21.29,36.87c11.62,20.13,23.24,40.25,34.86,60.38"/>
-    <polygon class="cls-3" points="103.82 55.97 124.98 19.33 176.61 108.76 167.29 124.68 155.3 145.14 143.32 124.4 103.82 55.97"/>
-    <path class="cls-2" d="M122.41,97.08l-21.13-36.71L14.93,209.94h42.32c78.9-136.66,14.79-25.62,65.16-112.86"/>
-    <polygon class="cls-1" points="176.52 190.68 155.36 154.03 123.04 210.02 165.35 210.02 176.52 190.68"/>
-  </g>
+<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6964_4032)">
+<path d="M46.2194 52.8204H52.8194V39.6104H46.2194H39.6094V52.8204H46.2194Z" fill="white"/>
+<path d="M26.41 0L13.2 13.2H0V26.41H19.81L33.01 13.2H39.61V0H26.41Z" fill="white"/>
+<path d="M26.41 26.4102L13.2 39.6102H0V52.8202H19.81L33.01 39.6102H39.61V26.4102H26.41Z" fill="white"/>
+<path d="M52.8194 26.4102V13.2002H46.2194H39.6094V26.4102H46.2194H52.8194Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_6964_4032">
+<rect width="52.82" height="52.82" fill="white"/>
+</clipPath>
+</defs>
 </svg>
