@@ -55,11 +55,11 @@ const shortcutDefinitions: Shortcut[] = [
     url: "https://stripe.com",
     iconUrl: "stripe.svg",
   },
-  {
-    name: "TenByte",
-    url: "https://tenbyte.org/ghost",
-    iconUrl: "ghost.svg",
-  },
+  // {
+  //   name: "TenByte",
+  //   url: "https://tenbyte.org/ghost",
+  //   iconUrl: "ghost.svg",
+  // },
   {
     name: "Supabase",
     url: "https://supabase.com",
@@ -94,6 +94,11 @@ const shortcutDefinitions: Shortcut[] = [
     name: "Artificial Analysis",
     url: "https://artificialanalysis.ai",
     iconUrl: "artificialanalysis.svg",
+  },
+  {
+    name: "Tailscale",
+    url: "https://login.tailscale.com",
+    iconUrl: "tailscale.svg",
   },
 ];
 
